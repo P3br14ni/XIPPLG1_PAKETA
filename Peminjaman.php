@@ -62,10 +62,11 @@
                     <a href="index.php" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
                     </div>
-                    <a href="PendataanBarang.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Pendataan Barang</a>
-                    <a href="Peminjaman.php" class="nav-item nav-link active"><i class="fa fa-keyboard me-2"></i>Peminjaman</a>
-                    <a href="GenerateLaporan.php" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Generate Laporan</a>
-                    <div class="nav-item dropdown">
+                    <a href="kategori.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Kategori</a>
+                    <a href="buku.php" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Buku</a>
+                    <a href="peminjaman.php" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Peminjaman</a>
+                    <a href="ulasan.php" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Ulasan</a>
+                    <div class="nav-item dropdown"> 
                     </div>
                 </div>
             </nav>

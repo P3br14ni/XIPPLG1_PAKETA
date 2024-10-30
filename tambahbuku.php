@@ -31,5 +31,10 @@
                                 $kat = mysqli_query($koneksi, "SELECT * FORM kategori");
                                 while($kategori = mysqli_fetch_array($kat)) {
                                     ?>
-                                    <option value="<?php echo $kategori['id_kategori']; ?>"><
+                                    <option value="<?php echo $kategori['id_kategori']; ?>"><?php echo $kategori['kategori']; ?></option>
+                                    <?php
                                 }   
+                            ?>
+                         </select></div>
+                    </div> 
+                    <div class=           

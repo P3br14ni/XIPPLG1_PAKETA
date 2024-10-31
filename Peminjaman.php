@@ -64,7 +64,7 @@
                     </div>
                     <a href="kategori.php" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Kategori</a>
                     <a href="buku.php" class="nav-item nav-link"><i class="fa fa-book me-2"></i>Buku</a>
-                    <a href="peminjaman.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Peminjaman</a>
+                    <a href="peminjaman.php" class="nav-item nav-link active"><i class="fa fa-th me-2"></i>Peminjaman</a>
                     <a href="ulasan.php" class="nav-item nav-link"><i class="fa fa-comments me-2"></i>Ulasan</a>
                     <div class="nav-item dropdown"> 
                     </div>

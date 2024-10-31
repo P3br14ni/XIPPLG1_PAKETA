@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PERPUSTAKAAN</title>
+    <title>DASHMIN - Bootstrap Admin Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -45,8 +45,8 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
-                <a href="index.php" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>PERPUS</h3>
+                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                    <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>DASHMIN</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
@@ -54,24 +54,24 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Pebri</h6>
+                        <h6 class="mb-0">Jhon Doe</h6>
                         <span>Admin</span>
-                    </div>
+                        </div>
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="index.php" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
                     </div>
-                    <a href="kategori.php" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Kategori</a>
+                    <a href="kategori.php" class="nav-item nav-link active"><i class="fa fa-table me-2"></i>Kategori</a>
                     <a href="buku.php" class="nav-item nav-link"><i class="fa fa-book me-2"></i>Buku</a>
                     <a href="peminjaman.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Peminjaman</a>
                     <a href="ulasan.php" class="nav-item nav-link"><i class="fa fa-comments me-2"></i>Ulasan</a>
                     <div class="nav-item dropdown">
-                       
                     </div>
                 </div>
             </nav>
         </div>
+                
         <!-- Sidebar End -->
 
 
@@ -79,7 +79,7 @@
         <div class="content">
             <!-- Navbar Start -->
             <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
-                <a href="index.php" class="navbar-brand d-flex d-lg-none me-4">
+                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
                     <h2 class="text-primary mb-0"><i class="fa fa-hashtag"></i></h2>
                 </a>
                 <a href="#" class="sidebar-toggler flex-shrink-0">
@@ -90,11 +90,15 @@
                 </form>
                 <div class="navbar-nav align-items-center ms-auto">
                     <div class="nav-item dropdown">
+                    <div class="navbar-nav align-items-center ms-auto">
+                    <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <i class="fa fa-envelope me-lg-2"></i>
                             <span class="d-none d-lg-inline-flex">Message</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
+                            <a href="#" class="dropdown-item">
+                                
                             <a href="#" class="dropdown-item text-center">See all message</a>
                         </div>
                     </div>
@@ -103,14 +107,13 @@
                             <i class="fa fa-bell me-lg-2"></i>
                             <span class="d-none d-lg-inline-flex">Notificatin</span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">  
+                        <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item text-center">See all notifications</a>
                         </div>
                     </div>
-                    <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">PERPUS</span>
+                            <span class="d-none d-lg-inline-flex">John Doe</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">My Profile</a>
@@ -123,13 +126,65 @@
             <!-- Navbar End -->
 
 
-            <!-- Chart Start -->
-          
-            <!-- Chart End -->
+            <!-- Table Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="bg-light rounded h-100 p-4">
+                            <h6 class="mb-4">Responsive Table</h6>
+                            <div class="table-responsive table-bordered">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First Name</th>
+                                            <th scope="col">Last Name</th>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Country</th>
+                                            <th scope="col">ZIP</th>
+                                            <th scope="col">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>John</td>
+                                            <td>Doe</td>
+                                            <td>jhon@email.com</td>
+                                            <td>USA</td>
+                                            <td>123</td>
+                                            <td>Member</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>mark@email.com</td>
+                                            <td>UK</td>
+                                            <td>456</td>
+                                            <td>Member</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>jacob@email.com</td>
+                                            <td>AU</td>
+                                            <td>789</td>
+                                            <td>Member</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Table End -->
 
 
             <!-- Footer Start -->
-           
+            
             <!-- Footer End -->
         </div>
         <!-- Content End -->

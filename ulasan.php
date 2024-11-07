@@ -1,3 +1,7 @@
+
+
+\
+
 <div class="midde_cont">
                   <div class="container-fluid">
                      <div class="row column_title">

@@ -65,13 +65,13 @@
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
-                    <a href="index.php" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <a href="index.php" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'index') ? 'active' : '';?> "><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
                     </div>
-                    <a href="kategori.php" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Kategori</a>
-                    <a href="buku.php" class="nav-item nav-link"><i class="fa fa-book me-2"></i>Buku</a>
-                    <a href="peminjaman.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Peminjaman</a>
-                    <a href="ulasan.php" class="nav-item nav-link"><i class="fa fa-comments me-2"></i>Ulasan</a>
+                    <a href="?page=kategori" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'kategori') ? 'active' : '';?>"><i class="fa fa-table me-2"></i>Kategori</a>
+                    <a href="?page=buku" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'buku') ? 'active' : '';?>"><i class="fa fa-book me-2"></i>Buku</a>
+                    <a href="?page=peminjaman" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'peminjaman') ? 'active' : '';?>"><i class="fa fa-th me-2"></i>Peminjaman</a>
+                    <a href="?page=ulasan" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'ulasan') ? 'active' : '';?>"><i class="fa fa-comments me-2"></i>Ulasan</a>
                     <div class="nav-item dropdown">
                     </div>
                 </div>
@@ -127,70 +127,21 @@
                     </div>
                 </div>
             </nav>
-            <!-- Navbar End -->
+             
+            <?php
 
+                $page = isset($_GET['page']) ? $_GET['page'] : 'display';
+                if(file_exists($page . '.php')) {
+                    include $page .'.php';
+                }else{
+                    include '404.php';
+                }
 
-            <!-- Sale & Revenue Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <div class="col-sm-6 col-xl-3">
-                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
-                            <i class="fa fa-chart-line fa-3x text-primary"></i>
-                            <div class="ms-3">
-                                <p class="mb-2">Total Kategori</p>
-                                <h6 class="mb-0">5</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3">
-                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
-                            <i class="fa fa-chart-bar fa-3x text-primary"></i>
-                            <div class="ms-3">
-                                <p class="mb-2">Total Buku</p>
-                                <h6 class="mb-0">6</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3">
-                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
-                            <i class="fa fa-chart-area fa-3x text-primary"></i>
-                            <div class="ms-3">
-                                <p class="mb-2">User</p>
-                                <h6 class="mb-0">6</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3">
-                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
-                            <i class="fa fa-chart-pie fa-3x text-primary"></i>
-                            <div class="ms-3">
-                                <p class="mb-2">Ulasan</p>
-                                <h6 class="mb-0">0</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Sale & Revenue End -->
-
-
-            <!-- Sales Chart Start -->
-            <!-- Sales Chart End -->
-
-
-            <!-- Recent Sales Start -->           
-            <!-- Recent Sales End -->
-
-
-            <!-- Widgets Start -->          
-            <!-- Widgets End -->
-
-
-            <!-- Footer Start -->        
-            <!-- Footer End -->
+            ?>
         </div>
+        
         <!-- Content End -->
-
+                    
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>

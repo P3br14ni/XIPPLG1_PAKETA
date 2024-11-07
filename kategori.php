@@ -180,6 +180,8 @@
                                             <td>12 08 2019</td>
                                             <th><a class="btn btn-sm btn-primary" href="">Hapus</a></th>
                                             <th><a class="btn btn-sm btn-primary" href="">Ubah</a></th>
+
+                                            
                                         </tr>
                                     </tbody>
                                 </table>

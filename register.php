@@ -1,5 +1,5 @@
 <?php
-require 'koneksi.php';
+require 'fungsi/koneksi.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

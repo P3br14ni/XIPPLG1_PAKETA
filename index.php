@@ -61,18 +61,38 @@
                     </div>
                     <div class="ms-3">
                         <h6 class="mb-0">Pebri</h6>
-                        <span>Admin</span>
+                        <span>online</span>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="index.php" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'index') ? 'active' : '';?> "><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <div class="nav-item dropdown">
                     </div>
-                    <a href="?page=kategori" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'kategori') ? 'active' : '';?>"><i class="fa fa-table me-2"></i>Kategori</a>
-                    <a href="?page=buku" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'buku') ? 'active' : '';?>"><i class="fa fa-book me-2"></i>Buku</a>
-                    <a href="?page=peminjaman" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'peminjaman') ? 'active' : '';?>"><i class="fa fa-th me-2"></i>Peminjaman</a>
-                    <a href="?page=ulasan" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'ulasan') ? 'active' : '';?>"><i class="fa fa-comments me-2"></i>Ulasan</a>
-                    <div class="nav-item dropdown">
+                    <?php
+                    if($_SESSION['user']['level'] !='peminjam'){
+                        ?>
+                        <li class="active">
+                        <a href="?page=kategori" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'kategori') ? 'active' : '';?>"><i class="fa fa-table me-2"></i>Kategori</a>
+                        <a href="?page=buku" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'buku') ? 'active' : '';?>"><i class="fa fa-book me-2"></i>Buku</a>
+                        <?php
+                    }else{
+                    ?>
+                        <a href="?page=peminjaman" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'peminjaman') ? 'active' : '';?>"><i class="fa fa-th me-2"></i>Peminjaman</a>
+                        <?php
+                    }
+                    ?>
+                        <a href="?page=ulasan" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'ulasan') ? 'active' : '';?>"><i class="fa fa-comments me-2"></i>Ulasan</a>
+                        <?php
+                    if($_SESSION['user']['level'] !='peminjam'){
+                        ?>
+                        <a href="?page=laporan" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'laporan') ? 'active' : '';?>"><i class="fa fa-th me-2"></i>Laporan</a>
+                        <?php
+                    }
+                    ?>
+                        <div class="nav-item dropdown">
+                            
+                       
+                    
                     </div>
                 </div>
             </nav>

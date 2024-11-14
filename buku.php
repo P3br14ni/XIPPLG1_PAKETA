@@ -23,7 +23,6 @@
                                              <th>Penulis</th>
                                              <th>Penerbit</th>
                                              <th>Tahun Terbit</th>
-                                             <th>Deskripsi</th>
                                              <th>Aksi</th>
                                           </tr>
                                        </thead>
@@ -40,7 +39,6 @@
                                             <td><?php echo $data['penulis']; ?></td>
                                             <td><?php echo $data['penerbit']; ?></td>
                                             <td><?php echo $data['tahun_terbit']; ?></td>
-                                            <td><?php echo $data['deskripsi']; ?></td>
                                             <td>
                                                 <a class="btn cur-p btn-secondary" href="?page=fungsi/ubah_buku&&id=<?php echo $data['id_buku']; ?>">Ubah</a>
                                                 <a onclick="return confirm('asli bli pen diapus kuh?')" class="btn cur-p btn-danger" href="?page=fungsi/hapus_buku&&id=<?php echo $data['id_buku']; ?>">Hapus</a>

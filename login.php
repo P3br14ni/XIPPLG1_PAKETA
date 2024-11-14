@@ -27,9 +27,9 @@ require 'koneksi.php';
                             $cek = mysqli_num_rows($data);
                             if($cek > 0) {
                                 $_SESSION['user'] = mysqli_fetch_array($data);
-                                echo '<script>alert("BWAAAAAA WELLCOME!!!!"); location.href="index.php";</script>';
+                                echo '<script>alert("Selamat datang diperpus digital!!"); location.href="index.php";</script>';
                             } else {
-                                echo '<script>alert("SALAH!!!!")</script>';
+                                echo '<script>alert("SALAH!!")</script>';
                             }
                         }
                     ?>

@@ -78,7 +78,7 @@
                     }else{
                     ?>
                         <a href="?page=peminjaman" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'peminjaman') ? 'active' : '';?>"><i class="fa fa-th me-2"></i>Peminjaman</a>
-                        <a href="?page=pengembalian" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'pengembalian') ? 'active' : '';?>"><i class="fa fa-th me-2"></i>Pengembalian</a>
+                        <a href="?page=pengembalian" class="nav-item nav-link <?php echo (isset($_GET['page']) && $_GET['page'] == 'pengembalian') ? 'active' : '';?>"><i class="fa fa-table me-3"></i>Pengembalian</a>
                         <?php
                     }
                     ?>
